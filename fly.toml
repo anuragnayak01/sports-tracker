@@ -1,0 +1,29 @@
+# fly.toml — Fly.io deployment config for Sports Multi-Object Tracker
+# Generated for: streamlit run app.py
+# Docs: https://fly.io/docs/reference/configuration/
+
+app = "sports-tracker"          # ← Change this to your unique app name
+primary_region = "sin"          # Singapore — closest to Mumbai/India
+                                # Other options: bom (Mumbai), lax, iad, lhr
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PORT = "8501"
+
+[http_service]
+  internal_port       = 8501
+  force_https         = true
+  auto_stop_machines  = false   # Keep alive 24/7 — never sleep
+  auto_start_machines = true
+  min_machines_running = 1      # Always at least 1 machine running
+
+  [http_service.concurrency]
+    type       = "connections"
+    hard_limit = 25
+    soft_limit = 20
+
+[[vm]]
+  size   = "shared-cpu-1x"      # Free tier machine
+  memory = "1gb"

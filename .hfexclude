@@ -1,0 +1,9 @@
+hf_deploy_tmp\
+venv\
+.git\
+__pycache__\
+*.pyc
+fly.toml
+deploy.sh
+Dockerfile
+.fly\
