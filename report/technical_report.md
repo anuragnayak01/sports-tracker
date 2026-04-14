@@ -1,9 +1,6 @@
 # Technical Report
 ## Multi-Object Detection and Persistent ID Tracking in Public Sports/Event Footage
 
-**Author:** *(your name)*  
-**Date:** *(submission date)*  
-**Video Source:** *(paste YouTube / public URL here)*  
 
 ---
 
