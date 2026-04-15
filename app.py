@@ -12,7 +12,7 @@ try:
     import cv2
 except Exception as e:
     import streamlit as st
-    st.error("❌ OpenCV failed to load. Deployment issue.")
+    st.error("❌ OpenCV failed to load (deployment issue)")
     st.code(str(e))
     st.stop()
 import streamlit as st
