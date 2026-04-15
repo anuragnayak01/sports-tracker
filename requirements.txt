@@ -1,8 +1,8 @@
 --no-cache-dir
-ultralytics>=8.2.0
+ultralytics==8.2.103
 opencv-python-headless==4.8.1.78
 numpy==1.26.4
-matplotlib>=3.8.0
-streamlit>=1.35.0
-yt-dlp>=2024.1.0
+matplotlib==3.8.4
+streamlit==1.35.0
+yt-dlp
 pillow
