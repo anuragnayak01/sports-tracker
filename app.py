@@ -7,15 +7,14 @@ import os
 import tempfile
 import time
 from pathlib import Path
+import streamlit as st
 
 try:
     import cv2
 except Exception as e:
-    import streamlit as st
     st.error("❌ OpenCV failed to load (deployment issue)")
     st.code(str(e))
     st.stop()
-import streamlit as st
 
 from tracker.pipeline import SportsPipeline
 from tracker.analytics import Analytics
