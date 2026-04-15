@@ -4,4 +4,4 @@ libxext6
 libxrender1
 zlib1g-dev
 libjpeg-dev
-libglib2.0-0
+libglib2.0-0t64
